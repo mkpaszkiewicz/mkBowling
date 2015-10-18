@@ -1,7 +1,6 @@
 # Compiled code
 *.o
-*Debug
-
+*.d
 
 # Temporary files
 *~
