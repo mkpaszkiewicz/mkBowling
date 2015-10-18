@@ -1,0 +1,10 @@
+/*** CONTROL ***/
+
+Right mouse button - open menu
+Escape - exit game
+Up arrow - increase throw power
+Down arrow - decrease throw power
+Left arrow - move bowl left
+Right arrow - move bowl right
+Q/E - set throw direction to the left/right
+A/D - set bowl spin to the left/right
