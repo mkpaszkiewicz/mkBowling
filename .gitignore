@@ -1,5 +1,7 @@
 # Compiled code
 *.o
+
+# make products
 *.d
 
 # Executable code
