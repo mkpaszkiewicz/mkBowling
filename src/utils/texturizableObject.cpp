@@ -38,4 +38,3 @@ unsigned int* TexturizableObject::getTextureIds()
 	return textureIds;
 }
 
-

@@ -12,10 +12,10 @@ MovingObject::~MovingObject()
 void MovingObject::reset()
 {
 	// initialize with default OpenGL values
-	position = Vector3df (0.0, 0.0, 0.0);
+	position = Vector3df(0.0, 0.0, 0.0);
 	lookDirection = Vector3df(0.0, 0.0, -1.0);
-	rightVector = Vector3df (1.0, 0.0, 0.0);
-	upVector = Vector3df (0.0, 1.0, 0.0);
+	rightVector = Vector3df(1.0, 0.0, 0.0);
+	upVector = Vector3df(0.0, 1.0, 0.0);
 
 	rotatedX = 0.0;
 	rotatedY = 0.0;
@@ -31,8 +31,8 @@ void MovingObject::rotateX(float angle)
 {
 	rotatedX -= angle;
 
-    float cosinus = cos(angle * PI / 180);
-    float sinus = sin(angle * PI / 180);
+	float cosinus = cos(angle * PI / 180);
+	float sinus = sin(angle * PI / 180);
 
 	// rotate lookDirection around the rightVector
 	lookDirection = lookDirection * cosinus + upVector * sinus;
@@ -45,8 +45,8 @@ void MovingObject::rotateY(float angle)
 {
 	rotatedY -= angle;
 
-    float cosinus = cos(angle * PI / 180);
-    float sinus = sin(angle * PI / 180);
+	float cosinus = cos(angle * PI / 180);
+	float sinus = sin(angle * PI / 180);
 
 	// rotate lookDirection around the upVector
 	lookDirection = lookDirection * cosinus - rightVector * sinus;
@@ -59,8 +59,8 @@ void MovingObject::rotateZ(float angle)
 {
 	rotatedZ -= angle;
 
-    float cosinus = cos(angle * PI / 180);
-    float sinus = sin(angle * PI / 180);
+	float cosinus = cos(angle * PI / 180);
+	float sinus = sin(angle * PI / 180);
 
 	// rotate rightVector around lookDirection
 	rightVector = rightVector * cosinus + upVector * sinus;
@@ -101,22 +101,22 @@ void MovingObject::moveUpward(float distance)
 
 float MovingObject::getRotatedX() const
 {
-    return rotatedX;
+	return rotatedX;
 }
 
 float MovingObject::getRotatedY() const
 {
-    return rotatedY;
+	return rotatedY;
 }
 
 float MovingObject::getRotatedZ() const
 {
-    return rotatedZ;
+	return rotatedZ;
 }
 
 const Vector3df MovingObject::getPosition() const
 {
-    return position;
+	return position;
 }
 
 void MovingObject::setPosition(const Vector3df position)

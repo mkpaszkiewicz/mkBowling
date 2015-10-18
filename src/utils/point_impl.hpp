@@ -5,30 +5,30 @@
 
 template<typename T> Point<T>::Point()
 {
-    this->x = 0;
-    this->y = 0;
-    this->z = 0;
+	this->x = 0;
+	this->y = 0;
+	this->z = 0;
 }
 
 template<typename T> Point<T>::Point(T x, T y, T z)
 {
-    this->x = x;
-    this->y = y;
-    this->z = z;
+	this->x = x;
+	this->y = y;
+	this->z = z;
 }
 
 template<typename T> Point<T>::Point(const Vector3df& vector)
 {
-    this->x = vector.x;
-    this->y = vector.y;
-    this->z = vector.z;
+	this->x = vector.x;
+	this->y = vector.y;
+	this->z = vector.z;
 }
 
 template<typename T> Point<T>::Point(const Point<T>& point)
 {
-    this->x = point.x;
-    this->y = point.y;
-    this->z = point.z;
+	this->x = point.x;
+	this->y = point.y;
+	this->z = point.z;
 }
 
 template<typename T> void Point<T>::rotateX(float angle)
@@ -81,7 +81,6 @@ template<typename T> Point<T>& Point<T>::operator+=(const Point<T>& point)
 	return *this;
 }
 
-
 template<typename T> Point<T>& Point<T>::operator-=(const Point<T>& point)
 {
 	*this = *this - point;
@@ -110,7 +109,7 @@ template<typename T> T* Point<T>::toMatrix() const
 
 template<typename T> T distance(const Point<T> &a, const Point<T> &b)
 {
-	return sqrt((a.x - b.x)*(a.x - b.x) + (a.y - b.y)*(a.y - b.y) + (a.z - b.z)*(a.z - b.z));
+	return sqrt((a.x - b.x) * (a.x - b.x) + (a.y - b.y) * (a.y - b.y) + (a.z - b.z) * (a.z - b.z));
 }
 
 template<typename T> Point<T> operator+(const Point<T> &a, const Point<T> &b)
@@ -142,7 +141,7 @@ template<typename T> Point<T> operator*(const Point<T> &point, T r)
 
 template<typename T> Point<T> operator*(T r, const Point<T> &point)
 {
-    return point * r;
+	return point * r;
 }
 
 template<typename T> std::ostream& operator<<(std::ostream& os, const Point<T> &point)

@@ -1,28 +1,42 @@
-#ifndef TEXTURIZABLEOBJECT_HPP_
-#define TEXTURIZABLEOBJECT_HPP_
+#ifndef TEXTURIZABLE_OBJECT_HPP_
+#define TEXTURIZABLE_OBJECT_HPP_
 
 #include "../utils/common.hpp"
 
 class TexturizableObject
 {
-protected:
-	std::vector<std::string> filenames;
-	unsigned int* textureIds;
+	protected:
+		std::vector<std::string> filenames;
 
-public:
-	TexturizableObject();
-	TexturizableObject(std::vector<std::string>& filenames);
-	~TexturizableObject();
+		unsigned int* textureIds;
 
-	void setFilenames(std::vector<std::string> filenames);
-	int getTextureNumber() const;
-	std::vector<std::string> getFilenames() const;
-	unsigned int* getTextureIds();
+	public:
+		TexturizableObject();
+
+		TexturizableObject(std::vector<std::string>& filenames);
+
+		~TexturizableObject();
+
+		/**
+		 * Sets filenames
+		 */
+		void setFilenames(std::vector<std::string> filenames);
+
+		/**
+		 * Returns number of textures - filenames size
+		 */
+		int getTextureNumber() const;
+
+		/**
+		 * Returns filenames
+		 */
+		std::vector<std::string> getFilenames() const;
+
+		/**
+		 * Returns textureIds
+		 */
+		unsigned int* getTextureIds();
 };
 
 #endif /* TEXTURIZABLEOBJECT_HPP_ */
-
-
-
-
 

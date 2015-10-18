@@ -10,77 +10,77 @@
  */
 template<typename T> class Vector3d
 {
-public:
+	public:
 
-	/**
-	 * X coordinate.
-	 */
-	T x;
+		/**
+		 * X coordinate.
+		 */
+		T x;
 
-	/**
-	 * Y coordinate.
-	 */
-	T y;
+		/**
+		 * Y coordinate.
+		 */
+		T y;
 
-	/**
-	 * Z coordinate.
-	 */
-	T z;
+		/**
+		 * Z coordinate.
+		 */
+		T z;
 
-	/**
-	 * Constructs the zero [0, 0, 0] vector.
-	 */
-	Vector3d();
+		/**
+		 * Constructs the zero [0, 0, 0] vector.
+		 */
+		Vector3d();
 
-	/**
-	 * Constructs the specified vector from other vector.
-	 */
-	Vector3d(const Vector3d<T>& vector3d);
+		/**
+		 * Constructs the specified vector from other vector.
+		 */
+		Vector3d(const Vector3d<T>& vector3d);
 
-	/**
-	 * Constructs the specified vector.
-	 */
-	Vector3d(T x, T y, T z);
+		/**
+		 * Constructs the specified vector.
+		 */
+		Vector3d(T x, T y, T z);
 
-	/**
-	 * Returns the magnitude.
-	 */
-	T magnitude() const;
+		/**
+		 * Returns the magnitude.
+		 */
+		T magnitude() const;
 
-	/**
-	 * Normalizes vector.
-	 */
-	Vector3d<T>& normalize();
+		/**
+		 * Normalizes vector.
+		 */
+		Vector3d<T>& normalize();
 
-	/**
-	 * Randomizes and normalizes vector.
-	 */
-	Vector3d<T>& randomize();
+		/**
+		 * Randomizes and normalizes vector.
+		 */
+		Vector3d<T>& randomize();
 
-	/**
-	 * Returns the opposite vector.
-	 */
-	Vector3d<T> operator-() const;
+		/**
+		 * Returns the opposite vector.
+		 */
+		Vector3d<T> operator-() const;
 
-	/**
-	 * Adding vector to itself.
-	 */
-	Vector3d<T>& operator+=(const Vector3d<T>& vector3d);
+		/**
+		 * Adding vector to itself.
+		 */
+		Vector3d<T>& operator+=(const Vector3d<T>& vector3d);
 
-	/**
-	 * Substracting vector from itself.
-	 */
-	Vector3d<T>& operator-=(const Vector3d<T>& vector3d);
+		/**
+		 * Substracting vector from itself.
+		 */
+		Vector3d<T>& operator-=(const Vector3d<T>& vector3d);
 
-	/**
-	 * Convert vector to an array.
-	 */
-	T* toArray() const;
+		/**
+		 * Convert vector to an array.
+		 */
+		T* toArray() const;
 
-	/**
-	 * Converts vector to matrix.
-	 */
-	T* toMatrix() const;
+		/**
+		 * Converts vector to matrix.
+		 */
+		T* toMatrix() const;
 };
 
 /**

@@ -5,28 +5,28 @@
 
 template<typename T> Vector3d<T>::Vector3d()
 {
-    this->x = 0;
-    this->y = 0;
-    this->z = 0;
+	this->x = 0;
+	this->y = 0;
+	this->z = 0;
 }
 
 template<typename T> Vector3d<T>::Vector3d(T x, T y, T z)
 {
-    this->x = x;
-    this->y = y;
-    this->z = z;
+	this->x = x;
+	this->y = y;
+	this->z = z;
 }
 
 template<typename T> Vector3d<T>::Vector3d(const Vector3d<T>& vector3d)
 {
-    this->x = vector3d.x;
-    this->y = vector3d.y;
-    this->z = vector3d.z;
+	this->x = vector3d.x;
+	this->y = vector3d.y;
+	this->z = vector3d.z;
 }
 
 template<typename T> T Vector3d<T>::magnitude() const
 {
-	return T (sqrt(x * x + y * y + z * z));
+	return T(sqrt(x * x + y * y + z * z));
 }
 
 template<typename T> Vector3d<T>& Vector3d<T>::normalize()
@@ -68,7 +68,6 @@ template<typename T> Vector3d<T>& Vector3d<T>::operator+=(const Vector3d<T>& vec
 	return *this;
 }
 
-
 template<typename T> Vector3d<T>& Vector3d<T>::operator-=(const Vector3d<T>& vector3d)
 {
 	*this = *this - vector3d;
@@ -97,7 +96,7 @@ template<typename T> T* Vector3d<T>::toMatrix() const
 
 template<typename T> Vector3d<T> operator+(const Vector3d<T> &a, const Vector3d<T> &b)
 {
-    Vector3d<T> result;
+	Vector3d<T> result;
 	result.x = a.x + b.x;
 	result.y = a.y + b.y;
 	result.z = a.z + b.z;
@@ -124,7 +123,7 @@ template<typename T> Vector3d<T> operator*(const Vector3d<T> &a, T r)
 
 template<typename T> Vector3d<T> operator*(T r, const Vector3d<T> &a)
 {
-    return a * r;
+	return a * r;
 }
 
 template<typename T> Vector3d<T> crossProduct(const Vector3d<T> &a, const Vector3d<T> &b)
@@ -138,7 +137,7 @@ template<typename T> Vector3d<T> crossProduct(const Vector3d<T> &a, const Vector
 
 template<typename T> Vector3d<T> dotProduct(const Vector3d<T> &a, const Vector3d<T> &b)
 {
-    Vector3d<T> result;
+	Vector3d<T> result;
 	result.x = a.x * b.x;
 	result.y = a.y * b.y;
 	result.z = a.z * b.z;
