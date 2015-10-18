@@ -40,6 +40,7 @@ class MovingObject
 		 * Object rotation angle around local Z axis.
 		 */
 		float rotatedZ;
+
 	public:
 
 		/*
@@ -47,9 +48,6 @@ class MovingObject
 		 */
 		MovingObject();
 
-		/*
-		 * Destructor
-		 */
 		virtual ~MovingObject();
 
 		/*
@@ -121,10 +119,12 @@ class MovingObject
 		 * Returns lookDirection.
 		 */
 		const Vector3df& getDirectionVector() const;
+
 		/**
 		 * Returns rightVector.
 		 */
 		const Vector3df& getRightVector() const;
+
 		/**
 		 * Returns upVector.
 		 */
