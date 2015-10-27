@@ -1,4 +1,7 @@
-/*** CONTROL ***/
+Simple 3D bowling game realized in OpenGL.
+
+Control
+-------
 
 Right mouse button - open menu
 Escape - exit game
@@ -8,3 +11,29 @@ Left arrow - move bowl left
 Right arrow - move bowl right
 Q/E - set throw direction to the left/right
 A/D - set bowl spin to the left/right
+
+
+Compilation and execution
+-------------------------
+
+Run make in /Debug directory. Before execution make sure,
+that executable 'mkBowling' is in the same directory as /graphics.
+
+
+Git Access
+----------
+
+The mkBowling source repository is available from the GitHub:
+
+  https://github.com/mkpaszkiewicz/mkBowling
+  
+  git@github.com:mkpaszkiewicz/mkBowling.git
+
+
+Author
+------
+
+Marcin Paszkiewicz
+mkpaszkiewicz@gmail.com
+
+Warsaw University of Technology
